@@ -8,7 +8,7 @@
     margin: auto;
     padding: 10px 0;
 }
-/* 
+
 .OrderButton {
     background-color: #DAD735;
     outline: none;
@@ -21,7 +21,8 @@
     box-shadow: 2px 2px 2px #966909;
 }
 
-.OrderButton:hover, .OrderButton:active {
+.OrderButton:hover,
+.OrderButton:active {
     background-color: #A0DB41;
     border: 1px solid #966909;
     color: #966909;
@@ -48,4 +49,4 @@
     100% {
         transform: scale(1);
     }
-} */
+}

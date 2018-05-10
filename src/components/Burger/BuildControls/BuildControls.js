@@ -21,6 +21,10 @@ const buildControls = (props) => (
                 removed={() => props.removeIngredient(ingr.label)}
                 disabled={props.disabled[ingr.label]} />
         })}
+        <button 
+        className={classes.OrderButton} 
+        disabled={props.purchasable}
+        onClick={props.purchased}>Order NOW</button>
     </div>
 );
 
