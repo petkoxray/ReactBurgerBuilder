@@ -81,6 +81,10 @@
             this.setState({ purchasing: false });
         }
 
+        purchaseContinueHanlder = () => {
+            alert('continue');
+        }
+
         render() {
             let disabledIngredients = {};
             for (const key in this.state.ingredients) {
@@ -93,6 +97,8 @@
                         <OrderSummary
                             ingredients={this.state.ingredients}
                             price={this.state.totalPrice}
+                            purchaseContinued={this.purchaseContinueHanlder}
+                            purchaseCancelled={this.purchaseCancelHandler}
                         />
                     </Modal>
                     <Burger ingredients={this.state.ingredients} />
